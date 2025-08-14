@@ -1,0 +1,6 @@
+google-adk
+litellm[proxy]
+litellm
+python-dotenv
+openai
+certifi
