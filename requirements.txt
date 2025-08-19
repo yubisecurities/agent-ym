@@ -1,5 +1,5 @@
 google-adk
-litellm[proxy]
+#litellm[proxy]
 litellm
 python-dotenv
 openai

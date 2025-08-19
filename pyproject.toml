@@ -1,0 +1,23 @@
+[project]
+name = "sample-adk-litellm"
+version = "0.1.0"
+description = "Sample ADK LiteLLM project"
+readme = "README.txt"
+requires-python = ">=3.8"
+dependencies = [
+    "google-adk",
+    "litellm>=1.75.5, <2.0.0",
+    "python-dotenv",
+    "openai<=1.99.9",
+    "certifi",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = []
+
+[tool.hatch.build.targets.wheel]
+packages = ["tg_agent"]
