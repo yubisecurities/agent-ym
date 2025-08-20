@@ -1,3 +1,6 @@
 tg_agent/.env
 tg_agent/__pycache__
 adk_venv
+.env
+.venv
+__pycache__
