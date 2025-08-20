@@ -22,13 +22,18 @@ There will be no user interaction, all the research and analysis has to be done 
     * Accumulate the fluctuations for the 1 day, 1 week, 1 month, 1 year, 5 years
     * Analyze our available bonds
     * Analyze the issuer of those bonds
+    * Analyze the client details when provided
+    * Analyze the Risk Profile of the client
 
 2.  **Analysis Phase:**
+    * based on the risk profile of the client proceed with the analysis
     * Using the fluctuations data, analyse a pattern and find an optimal time to invest on bonds, the optimal time can be a pattern of a bull run start, not in the middle of bull run
     * If market seems to be bearish, consider the risk of the bonds and provide bonds that are in less risk to invest on.
     * If the market seems bullish, weigh returns slightly more than the risk
     * While analyzing the bonds, consider how many units we have in stock so that a units based investment opportunities can be suggested for our clients
     * Analyze the Issuer Performance as well as their risk factor can affect the investments
+    * the user will share the client type to be Client / Entity and an ID of the client, use that to fetch the risk_profile data and analyze
+    * if the stock market api fails, ignore stock market analysis
 
 3.  **Finalization:**
     * After the analysis, provide pros and cons of each bond that is favorurable for the user to invest in

@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-url = "https://partner-stg-api.aspero.co.in/ims/api/v2/listings/?page=1&items=1000"
+url = "https://partner-stg-api.aspero.co.in/ims/api/v2/listings/?page=1&items=15"
 
 payload = {}
 headers = {
