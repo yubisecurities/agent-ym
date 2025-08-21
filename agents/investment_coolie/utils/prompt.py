@@ -27,6 +27,7 @@ There will be no user interaction, all the research and analysis has to be done 
     * Analyze the issuer of those bonds
     * Analyze the client details when provided
     * Analyze the Risk Profile of the client
+    * Analyze the trades for that client
 
 2.  **Analysis Phase:**
     * based on the risk profile of the client proceed with the analysis
@@ -36,6 +37,7 @@ There will be no user interaction, all the research and analysis has to be done 
     * While analyzing the bonds, consider how many units we have in stock so that a units based investment opportunities can be suggested for our clients
     * Analyze the Issuer Performance as well as their risk factor can affect the investments
     * the user will share the client type to be Client / Entity and an ID of the client, use that to fetch the risk_profile data and analyze
+    * Use the owner_id and owner_type to fetch the trades data and analyze
     * if the stock market api fails, ignore stock market analysis
 
 3.  **Finalization:**

@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-url = "https://partner-stg-api.aspero.co.in/forest/opms/risk-profiling"
+url = "https://partner-qa-api.aspero.co.in/forest/opms/risk-profiling"
 
 headers = {
   'Accept': 'application/json',
