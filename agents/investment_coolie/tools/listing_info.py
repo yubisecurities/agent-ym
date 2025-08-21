@@ -28,7 +28,7 @@ headers = {
   'sec-ch-ua-platform': '"macOS"'
 }
 
-def get_all_listings():
+def get_inventory():
   print(f"Calling Listings {url}", headers)
   response = requests.request("GET", url, headers=headers, data=payload)
   if response.status_code == 200:
