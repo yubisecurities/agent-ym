@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-url = "https://partner-qa-api.aspero.co.in/ims/api/v2/listings/?page=1&items=15"
+url = "https://partner-qa-api.aspero.co.in/idms/api/v1/OWNER/"
 
 payload = {}
 headers = {
@@ -28,9 +28,10 @@ headers = {
   'sec-ch-ua-platform': '"macOS"'
 }
 
-def get_inventory():
-  print(f"Calling Listings {url}", headers)
-  response = requests.request("GET", url, headers=headers, data=payload)
+def get_client_details(owner_type: str, owner_id: str) -> dict:
+  final_url = url.replace("OWNER", "clients" if owner_type == "Client" else "entities") + owner_id
+  print(f"Calling Owner Details {final_url}", headers)
+  response = requests.request("GET", final_url, headers=headers, data=payload)
   if response.status_code == 200:
     return response.text
   else:

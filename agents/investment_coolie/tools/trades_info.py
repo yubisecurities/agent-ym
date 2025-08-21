@@ -11,10 +11,10 @@ payload = {}
 headers = {
   'accept': 'application/json',
   'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
-  'authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhdXRoMHw2NmNkYjQzMDRlNGYyYmYwY2NhM2ZkNDkiLCJpc3MiOiJodHRwczovL2F1dGgtcWEubXl5dWJpaW52ZXN0LmluLyIsImlhdCI6MTc1NTcxNjEzMywiYXVkIjoiaHR0cHM6Ly9hdXRoLXFhLWFwaS5teXl1YmlpbnZlc3QuaW4iLCJleHAiOjE3NTU3MjMzMzMsImh0dHBzOi8vYXV0aC1xYS1hcGkubXl5dWJpaW52ZXN0LmluL2xvY2FsX3VzZXJfaWQiOiI2NmNkYjQzMDIwMWMxZDAwNjBiODcyZWMiLCJodHRwczovL2F1dGgtcWEtYXBpLm15eXViaWludmVzdC5pbi9lbnRpdHlfaWQiOiI2NTAzZjIzY2Y4ZjBmMTAwNjFlMTFiMWEiLCJodHRwczovL2F1dGgtcWEtYXBpLm15eXViaWludmVzdC5pbi9ncm91cHMiOlsiZGlzdHJpYnV0b3IiXSwiaHR0cHM6Ly9hdXRoLXFhLWFwaS5teXl1YmlpbnZlc3QuaW4vcm9sZXMiOlsiYWRtaW4iXSwiaHR0cHM6Ly9hdXRoLXFhLWFwaS5teXl1YmlpbnZlc3QuaW4vc3ViZ3JvdXBzIjpbXSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsImh0dHBzOi8vYXV0aC1xYS1hcGkubXl5dWJpaW52ZXN0LmluL3NraXBfaHJtcyI6dHJ1ZX0.mn1kGzmQqH4wJK7p8g9Dw3qKqPUROz2HdiGI4Ex_OXU',
-  'channel': 'partner',
+  'Authorization': os.getenv('B2B2C_API_KEY'),
+  'Current-Entity-Id': os.getenv('B2B2C_API_ENTITY'),
+  'channel': os.getenv('B2B2C_API_CHANNEL'),
   'content-type': 'application/json',
-  'current-entity-id': '6503f23cf8f0f10061e11b1a',
   'current-group': 'distributor',
   'if-none-match': 'W/"2eba60fc3744ad23b378c6fd47d5a2e2"',
   'origin': 'https://partner-qa.aspero.co.in',

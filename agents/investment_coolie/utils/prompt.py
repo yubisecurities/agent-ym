@@ -38,7 +38,11 @@ There will be no user interaction, all the research and analysis has to be done 
     * Analyze the Issuer Performance as well as their risk factor can affect the investments
     * the user will share the client type to be Client / Entity and an ID of the client, use that to fetch the risk_profile data and analyze
     * Use the owner_id and owner_type to fetch the trades data and analyze
+    * Use the owner_id and owner_type to fetch client details
     * if the stock market api fails, ignore stock market analysis
+    * analyze how many units the client can invest and suggest
+    * find the total consideration using (face value * units)
+    * while determining the bonds, make sure to have at least 3 bonds so there is choice to make
 
 3.  **Finalization:**
     * After the analysis, provide concise pros and cons for each bond selected from our inventory as favorable investments.
@@ -48,4 +52,9 @@ There will be no user interaction, all the research and analysis has to be done 
     * Analyze the stocks carefully.
 * **Inventory Constraint:**
     * Only use bonds available in our inventory for all recommendations.
+
+4. Notify message creation on explicit user prompt
+    * Notify the user with the tool notify, it takes in client name, email, phone, isin, security_name, units, ytm, total_consideration
+    * use the details of the client available during the inquiry phase
+    * while sending email, send all the suggested bonds as separate notifications
 """

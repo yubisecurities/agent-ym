@@ -9,6 +9,8 @@ from .tools.listing_info import get_inventory
 from .tools.stock_info import get_stock_index, get_stock
 from .tools.risk_profile_info import get_risk_profile
 from .tools.trades_info import get_trades_data
+from .tools.client_info import get_client_details
+from .tools.notification import notify
 
 from .utils.prompt import investment_coolie_prompt
 
@@ -20,5 +22,5 @@ root_agent = Agent(
     model=LiteLlm(model="gemini-2.5-pro-(US)", temperature=0.8),
     name="investment_coolie",
     instruction=investment_coolie_prompt,
-    tools=[get_company_info, get_inventory, get_stock_index, get_stock, get_risk_profile, get_trades_data],
+    tools=[get_company_info, get_inventory, get_stock_index, get_stock, get_risk_profile, get_trades_data, notify, get_client_details],
 )
